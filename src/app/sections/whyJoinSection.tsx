@@ -44,7 +44,7 @@ const WhyJoin = () => {
           At Digital Guardians, we believe in the power of people to drive
           meaningful change. We are a team of thinkers, innovators, and
           problem-solvers committed to transforming businesses, industries, and
-          communities. If you're passionate about making an impact, this is the
+          communities. If you&#39;re passionate about making an impact, this is the
           place for you.
         </p>
       </div>

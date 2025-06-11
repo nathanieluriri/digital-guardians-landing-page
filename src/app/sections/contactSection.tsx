@@ -15,7 +15,7 @@ const ContactSection: React.FC = () => {
 
           <h1 className="text-4xl font-bold text-gray-800">Get in Touch</h1>
           <p className="text-gray-600">
-            We're here to assist you with any inquiries.
+            We&#39;re here to assist you with any inquiries.
           </p>
 
           <div className="flex items-start space-x-4">
