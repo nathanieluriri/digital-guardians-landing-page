@@ -29,14 +29,14 @@ const WhyJoin = () => {
     <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
       {/* Left Side: Intro Text */}
       <div>
-        <Link
-          href="/careers"
-          className="inline-flex items-center px-4 py-1 border border-black rounded-full text-sm mb-6"
-        >
-          <span className="w-2 h-2 bg-black rounded-full mr-2"></span>
-          Careers at Digital Guardians
-        </Link>
+        <div className="flex items-center space-x-2 border border-gray-300 rounded-[11px] px-4 py-2 w-fit">
+            <span className="h-2 w-2 bg-black rounded-full"></span>
+            <p className="text-sm font-medium">Careers at Digital Guardians</p>
+          </div>
+          <div className='p-4'></div>
         <h2 className="text-4xl font-bold mb-4">Shape the future with us.</h2>
+        
+    <div className='p-2'></div>
         <p className="text-gray-700 leading-relaxed">
           At Digital Guardians, we believe in the power of people to drive meaningful change. We are a team of thinkers,
           innovators, and problem-solvers committed to transforming businesses, industries, and communities. If you're

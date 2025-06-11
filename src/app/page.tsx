@@ -3,6 +3,7 @@ import ServiceSection from "./sections/serviceSection";
 import AboutSection from "./sections/aboutSection";
 import FaqSection from "./sections/frequentlyAskedQuestionsSection";
 import WhyJoin from "./sections/whyJoinSection";
+import ContactSection from "./sections/contactSection";
 export default function Home() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function Home() {
     <AboutSection/>
     <WhyJoin/>
     <FaqSection/>
+    <ContactSection/>
     </>
   );
 }

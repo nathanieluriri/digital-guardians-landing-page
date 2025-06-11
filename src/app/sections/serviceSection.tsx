@@ -26,7 +26,10 @@ const ServiceSection: React.FC = () => {
         
         {/* Text Content */}
         <div className="flex-1">
-          <div className='px-2 pt-1.5 border rounded-[11px]  border-gray-900 w-fit'><p className="text-sm mb-2 text-gray-900">● Services</p></div>
+          <div className="flex items-center space-x-2 border border-gray-300 rounded-[11px] px-4 py-2 w-fit">
+            <span className="h-2 w-2 bg-black rounded-full"></span>
+            <p className="text-sm font-medium">Services</p>
+          </div>
           <p>What Digital Guardian Offers</p>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Protect What Matters Most — Digital Guardian Secures Your Data, Defends Your Business.

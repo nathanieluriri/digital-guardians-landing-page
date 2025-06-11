@@ -21,7 +21,10 @@ const AboutSection: React.FC = () => {
 
         {/* Right Side: Text Content */}
         <div className="flex-1">
-          <p className="text-sm text-gray-500 mb-2">● About</p>
+          <div className="flex items-center space-x-2 border border-gray-300 rounded-[11px] px-4 py-2 w-fit">
+            <span className="h-2 w-2 bg-black rounded-full"></span>
+            <p className="text-sm font-medium">About</p>
+          </div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Digital Guardian Mission, Vision and Core Values
           </h2>
