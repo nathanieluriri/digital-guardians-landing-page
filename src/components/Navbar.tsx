@@ -1,8 +1,8 @@
 // components/Navbar.tsx
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
+import { useState } from "react";
+import Link from "next/link";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -13,10 +13,7 @@ export function Navbar() {
         <Link href="/" className="text-xl font-bold">
           MyApp
         </Link>
-        <button
-          className="md:hidden"
-          onClick={() => setOpen(!open)}
-        >
+        <button className="md:hidden" onClick={() => setOpen(!open)}>
           ☰
         </button>
         <div className="hidden md:flex gap-4">

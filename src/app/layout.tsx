@@ -1,23 +1,21 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Playfair_Display,Roboto } from 'next/font/google';
+import { Playfair_Display, Roboto } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
 import Footer from "./sections/footer";
 const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  display: 'swap',
-  variable: '--font-roboto'
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-roboto",
 });
 
 const playfair = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  display: 'swap',
-  variable: '--font-playfair'
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-playfair",
 });
-
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -31,12 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${roboto.variable}`}>
-      <body
-      ><Navbar/>
+      <body>
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
-      
     </html>
   );
 }

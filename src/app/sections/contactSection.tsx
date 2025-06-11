@@ -1,6 +1,6 @@
 // components/ContactSection.tsx
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 const ContactSection: React.FC = () => {
   return (
@@ -73,7 +73,10 @@ const ContactSection: React.FC = () => {
               <p className="text-gray-600">
                 Call us for quick support or inquiries.
               </p>
-              <a href="tel:+2348000000000" className="text-blue-600 hover:underline">
+              <a
+                href="tel:+2348000000000"
+                className="text-blue-600 hover:underline"
+              >
                 +234 800 000 0000
               </a>
             </div>
@@ -96,7 +99,10 @@ const ContactSection: React.FC = () => {
           <div className="relative z-10 bg-white p-8 border border-gray-300 rounded-lg shadow-lg w-full max-w-md">
             <form className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Name
                 </label>
                 <input
@@ -108,7 +114,10 @@ const ContactSection: React.FC = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Email
                 </label>
                 <input
@@ -120,7 +129,10 @@ const ContactSection: React.FC = () => {
                 />
               </div>
               <div>
-                <label htmlFor="company" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="company"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Company
                 </label>
                 <input
@@ -132,7 +144,10 @@ const ContactSection: React.FC = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Message
                 </label>
                 <textarea
