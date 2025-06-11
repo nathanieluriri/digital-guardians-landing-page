@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import Image from "next/image";
 
 type FAQCategory = "General" | "Getting Started" | "Billing" | "The Product";
 
@@ -167,11 +168,14 @@ const FaqSection: React.FC = () => {
 
         {/* Right: Illustration */}
         <div className="flex-1 hidden md:flex text-center items-center m-auto justify-center">
-          <img
-            src="/faq.png" // Replace with actual image
-            alt="FAQ illustration"
-            className="max-w-sm object-contain"
-          />
+            <Image
+                        src="/faq.png" // Replace with actual image// Replace with actual image
+                        alt="Digital Guardians Logo"
+                        width={300}
+                        height={300}
+                        className="object-contain"
+                      />
+         
         </div>
       </div>
 
