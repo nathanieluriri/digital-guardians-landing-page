@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Playfair_Display, Roboto } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
-import Footer from "./sections/footer";
+import Footer from "@/components/footer";
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "700"],
