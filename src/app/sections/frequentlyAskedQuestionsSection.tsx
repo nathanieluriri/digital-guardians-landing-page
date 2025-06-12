@@ -114,15 +114,15 @@ const FaqSection: React.FC = () => {
         {/* Left: FAQ Tabs and Accordion */}
         <div className="flex-1">
           <div className="flex items-center space-x-2 border border-gray-300 rounded-[11px] px-4 py-2 w-fit">
-            <span className="h-2 w-2 bg-black rounded-full"></span>
-            <p className="text-sm font-medium">Frequently Asked Questions</p>
+            <span className="h-2 w-2 bg-gray-600 rounded-full"></span>
+            <p className="text-sm font-light text-gray-600">Frequently Asked Questions</p>
           </div>
           <div className="p-3.5"></div>
-          <p className="mb-6 text-gray-700">
+          <p className="mb-6 text-gray-700 leading-relaxed tracking-wider">
             We offer a range of pricing plans to fit every budget and level of
             need. Whether you’re a solo professional
           </p>
-
+<div className="p-3.5"></div>
           {/* Category Tabs */}
           <div className="flex flex-wrap gap-2 mb-8">
             {categories.map(({ key, count }) => (
@@ -146,7 +146,7 @@ const FaqSection: React.FC = () => {
           {/* Accordion */}
           <div className="space-y-4">
             {faqData[selectedCategory].map((faq, index) => (
-              <div key={index} className="border-b pb-4">
+              <div key={index} className="border-b border-gray-200 pb-8">
                 <button
                   className="w-full flex justify-between items-center text-left text-lg font-medium"
                   onClick={() => toggleAccordion(index)}

@@ -44,7 +44,7 @@ const AboutSection: React.FC = () => {
               Vision Statement
             </span>
             <div className="p-1"></div>
-            <p className="text-gray-700">
+            <p className="text-gray-900 leading-relaxed tracking-wider">
               To be the world&rsquo;s most trusted guardian of digital assets,
               empowering a safer, smarter, and more secure digital future for
               everyone.
@@ -59,7 +59,7 @@ const AboutSection: React.FC = () => {
               Mission Statement
             </span>
             <div className="p-1"></div>
-            <p className="text-gray-700">
+            <p className="text-gray-900 leading-relaxed tracking-wider">
               To protect businesses and individuals from evolving cyber threats
               by delivering cutting-edge security solutions, relentless
               innovation, and expert guidance&nbsp;&ndash;&nbsp;24/7, globally.
@@ -73,7 +73,7 @@ const AboutSection: React.FC = () => {
               <span className="inline-block w-2 h-2 bg-red-500 rounded-full mr-2"></span>
               Core Values
             </span>
-            <ul className="list-disc pl-5  text-gray-900 space-y-2 mt-2">
+            <ul className="list-disc pl-5 leading-relaxed tracking-wider  text-gray-900 space-y-2 mt-2">
               <li>
                 <strong>Integrity First:</strong> uphold the highest standards
                 of honesty and transparency in all we do.

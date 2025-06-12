@@ -47,7 +47,7 @@ const ServiceSection: React.FC = () => {
             Protect What Matters Most — Digital Guardian Secures Your Data,
             Defends Your Business.
           </h2>
-          <p className="text-lg text-gray-800 mb-8">
+          <p className="text-lg text-gray-900 mb-8 font-light leading-relaxed tracking-wider">
             From insider threats to advanced external attacks, Digital Guardian
             delivers enterprise-grade cybersecurity solutions that safeguard
             your sensitive data across endpoints, networks, and the cloud. With
