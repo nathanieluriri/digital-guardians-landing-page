@@ -21,15 +21,30 @@ const services = [
 
 const ServiceSection: React.FC = () => {
   return (
-    <section className="w-full bg-white text-black px-6 py-20">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 items-center">
-        {/* Text Content */}
-        <div className="flex-1">
+    <section className="w-full bg-[#FFF8F8] text-black px-10 py-13">
+      <div className="max-w-[1522px] bg-white p-15 rounded-2xl mx-auto flex flex-col md:flex-row gap-10 items-center">
+                <div className="flex gap-20 sm:flex-col flex-row ">
+
+        
+         <div className="flex gap-5 flex-col">
           <div className="flex items-center space-x-2 border border-gray-300 rounded-[11px] px-4 py-2 w-fit">
             <span className="h-2 w-2 bg-black rounded-full"></span>
             <p className="text-sm font-medium">Services</p>
           </div>
-          <p>What Digital Guardian Offers</p>
+          <p>What Digital Guardian Offers?</p>
+        </div>
+        <div className="flex-1 flex justify-center">
+          <Image
+            src="/service-image.png" // Replace with your actual image path
+            alt="Service Illustration"
+            width={400}
+            height={400}
+            className="object-contain"
+          />
+        </div>
+        </div>
+        {/* Text Content */}
+        <div className="flex-1">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Protect What Matters Most — Digital Guardian Secures Your Data,
             Defends Your Business.
@@ -56,16 +71,7 @@ const ServiceSection: React.FC = () => {
         </div>
 
         {/* Placeholder Image */}
-        <div className="flex-1 flex justify-center">
-          <Image
-            src="/service-image.png" // Replace with your actual image path
-            alt="Service Illustration"
-            width={400}
-            height={400}
-            className="object-contain"
-          />
-        </div>
-        
+
       </div>
       
     </section>
