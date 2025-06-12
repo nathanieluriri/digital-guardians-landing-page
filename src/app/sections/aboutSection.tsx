@@ -5,37 +5,45 @@ import Image from "next/image";
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="w-full bg-white text-black px-6 py-20">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
-        {/* Left Side: Logo or Illustration */}
-        <div className="flex-1 flex justify-center">
-          <Image
-            src="/digital-guardian-logo.png" // Replace with actual image
-            alt="Digital Guardians Logo"
-            width={300}
-            height={300}
-            className="object-contain"
-          />
-        </div>
-
-        {/* Right Side: Text Content */}
-        <div className="flex-1">
-          <div className="flex items-center space-x-2 border border-gray-300 rounded-[11px] px-4 py-2 w-fit">
+    <section className="w-full bg-white text-black px-2 py-20 relative">
+      <div className="max-w-[1428px] mx-auto flex flex-col md:flex-row items-center gap-10">
+        <div className="flex flex-row lg:flex-col justify-between lg:items-start items-center lg:w-fit w-full lg:p-0 p-0.5">
+          <div className="flex items-center space-x-2 border border-gray-300 rounded-[11px] px-4 py-2 w-fit h-fit">
             <span className="h-2 w-2 bg-black rounded-full"></span>
             <p className="text-sm font-medium">About</p>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <div className="w-fit">
+            <Image
+              src="/digital-guardian-logo.png" // Replace with actual image
+              alt="Digital Guardians Logo"
+              width={688}
+              height={688}
+              className="object-contain hidden lg:block"
+            />
+            <Image
+              src="/digital-guardian-logo.png" // Replace with actual image
+              alt="Digital Guardians Logo"
+              width={132}
+              height={132}
+              className="object-contain block lg:hidden"
+            />
+          </div>
+        </div>
+
+        {/* Right Side: Text Content */}
+        <div className="flex flex-col max-w-xl">
+          <h2 className="text-3xl md:text-5xl font-light mb-6">
             Digital Guardian Mission, Vision and Core Values
           </h2>
 
           {/* Vision Statement */}
           <div className="mb-6">
-            <span className="inline-block px-3 py-1 border rounded-full text-sm mb-2 text-black border-gray-300">
+            <span className="inline-block px-3 py-1 border rounded-[11px] text-sm mb-2 text-black border-gray-300">
               <span className="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span>
               Vision Statement
             </span>
             <p className="text-gray-700">
-              To be the world’s most trusted guardian of digital assets,
+              To be the world&rsquo;s most trusted guardian of digital assets,
               empowering a safer, smarter, and more secure digital future for
               everyone.
             </p>
@@ -43,20 +51,20 @@ const AboutSection: React.FC = () => {
 
           {/* Mission Statement */}
           <div className="mb-6">
-            <span className="inline-block px-3 py-1 border rounded-full text-sm mb-2 text-black border-gray-300">
+            <span className="inline-block px-3 py-1 border rounded-[11px] text-sm mb-2 text-black border-gray-300">
               <span className="inline-block w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
               Mission Statement
             </span>
             <p className="text-gray-700">
               To protect businesses and individuals from evolving cyber threats
               by delivering cutting-edge security solutions, relentless
-              innovation, and expert guidance—24/7, globally.
+              innovation, and expert guidance&nbsp;&ndash;&nbsp;24/7, globally.
             </p>
           </div>
 
           {/* Core Values */}
           <div>
-            <span className="inline-block px-3 py-1 border rounded-full text-sm mb-2 text-black border-gray-300">
+            <span className="inline-block px-3 py-1 border rounded-[11px] text-sm mb-2 text-black border-gray-300">
               <span className="inline-block w-2 h-2 bg-red-500 rounded-full mr-2"></span>
               Core Values
             </span>
@@ -85,6 +93,12 @@ const AboutSection: React.FC = () => {
           </div>
         </div>
       </div>
+      <Image
+              src="/paper-texture-two.svg"
+              alt="Foreground texture"
+              fill
+              className="pointer-events-none z-50 object-center h-full object-cover opacity-20"
+            />
     </section>
   );
 };

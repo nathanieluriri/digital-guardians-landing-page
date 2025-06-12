@@ -21,7 +21,6 @@ const services = [
 
 const ServiceSection: React.FC = () => {
   return (
-    
     <section className="w-full relative bg-[#FFF8F8] text-black px-2 py-10 sm:px-10 sm:py-13 overflow-x-hidden">
       <div className="max-w-[1522px] bg-white p-5  sm:p-15 rounded-2xl mx-auto flex flex-col lg:flex-row gap-10 items-center">
         <div className="flex gap-5 sm:gap-20 lg:flex-col flex-row ">
@@ -44,7 +43,7 @@ const ServiceSection: React.FC = () => {
         </div>
         {/* Text Content */}
         <div className="flex-1">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-light mb-6">
             Protect What Matters Most — Digital Guardian Secures Your Data,
             Defends Your Business.
           </h2>
@@ -71,12 +70,12 @@ const ServiceSection: React.FC = () => {
 
         {/* Placeholder Image */}
       </div>
-       <Image
-              src="/paper-texture-one.svg"
-              alt="Foreground texture"
-              fill
-              className="pointer-events-none z-50 object-center h-full object-cover opacity-20"
-            />
+      <Image
+        src="/paper-texture-one.svg"
+        alt="Foreground texture"
+        fill
+        className="pointer-events-none z-50 object-center h-full object-cover opacity-20"
+      />
     </section>
   );
 };
