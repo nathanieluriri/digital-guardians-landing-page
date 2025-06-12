@@ -23,12 +23,12 @@ function ResponsiveHeroImage() {
     <div>
       {/* Image for large screens */}
       <div className="hidden lg:flex text-center self-center bg-center  justify-center">
-        <Image
-          src="/laptop-hero-section-image.png"
-          alt="Large screen image"
-          width={1200}
-          height={600}
-        />
+           <Image
+        src="/paper-texture-one.svg"
+        alt="Foreground texture"
+        fill
+        className="pointer-events-none z-50 object-center object-cover opacity-25"
+      />
       </div>
 
       {/* Image for small screens */}
@@ -52,6 +52,7 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <section className="w-full px-6 py-20 bg-white text-center md:text-left">
+
       <div className="max-w-6xl mx-auto">
         <h1 className="text-center text-4xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6">
           {title}
@@ -65,9 +66,10 @@ const Hero: React.FC<HeroProps> = ({
           {ctaPrimary && (
             <Link
               href={ctaPrimary.href}
-              className="px-6 py-3 text-white bg-red-600 justify-center flex justify-items-center self-center m-auto  text-center  hover:bg-blue-700 rounded-md text-lg font-medium"
+              className="px-6 py-3 gap-4 text-white bg-red-600 justify-center flex justify-items-center self-center m-auto  text-center  hover:bg-blue-700 rounded-md text-lg font-medium"
             >
-              {ctaPrimary.label}
+              {ctaPrimary.label} 
+              <Image src={'/white-arrow.svg'} height={8.5} width={20.5} alt="Arrow" />
             </Link>
           )}
           {ctaSecondary && (
