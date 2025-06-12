@@ -97,7 +97,7 @@ const AboutSection: React.FC = () => {
               src="/paper-texture-one.svg"
               alt="Foreground texture"
               fill
-              className="pointer-events-none z-50 object-center h-full object-cover opacity-20"
+              className="pointer-events-none z-50 object-center h-full object-cover opacity-12"
             />
     </section>
   );
