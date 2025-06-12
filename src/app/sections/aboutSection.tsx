@@ -6,7 +6,7 @@ import Image from "next/image";
 const AboutSection: React.FC = () => {
   return (
     <section className="w-full bg-white text-black px-2 py-20 relative">
-      <div className="max-w-[1428px] mx-auto flex flex-col md:flex-row items-center gap-10">
+      <div className="max-w-[1428px] justify-center mx-auto flex flex-col md:flex-row items-center gap-10">
         <div className="flex flex-row lg:flex-col justify-between lg:items-start items-center lg:w-fit w-full lg:p-0 p-0.5">
           <div className="flex items-center space-x-2 border border-gray-300 rounded-[11px] px-4 py-2 w-fit h-fit">
             <span className="h-2 w-2 bg-black rounded-full"></span>

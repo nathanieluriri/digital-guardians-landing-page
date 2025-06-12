@@ -52,7 +52,7 @@ const WhyJoin = () => {
       </div>
 
       {/* Right Side: Features */}
-      <div>
+      <div className=" flex flex-col items-center" >
         <h3 className="text-2xl font-light mb-6">
           Why Join Digital Guardians?
         </h3>
