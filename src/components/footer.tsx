@@ -61,7 +61,7 @@ export default function Footer() {
               <span>Twitter</span>
             </li>
             <li className="flex items-center space-x-2">
-              <Image src="/linkedin.svg" alt="LinkedIn" width={16} height={16} />
+              <Image src="/linkedIn.svg" alt="LinkedIn" width={16} height={16} />
               <span>LinkedIn</span>
             </li>
             <li className="flex items-center space-x-2">
