@@ -118,7 +118,7 @@ const FaqSection: React.FC = () => {
             <p className="text-sm font-light text-gray-600">Frequently Asked Questions</p>
           </div>
           <div className="p-3.5"></div>
-          <p className="mb-6 text-gray-700 leading-relaxed tracking-wider">
+          <p className="mb-6 text-gray-900 leading-relaxed font-light tracking-wider">
             We offer a range of pricing plans to fit every budget and level of
             need. Whether you’re a solo professional
           </p>

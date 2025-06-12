@@ -5,14 +5,14 @@ import { Navbar } from "@/components/Navbar";
 import Footer from "@/components/footer";
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "700","100","200","500","600","900","800","300"],
   display: "swap",
   variable: "--font-roboto",
 });
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "700","500","600","900","800"],
   display: "swap",
   variable: "--font-playfair",
 });

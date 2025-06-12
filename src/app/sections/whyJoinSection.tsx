@@ -41,7 +41,7 @@ const WhyJoin = () => {
         <h2 className="text-4xl font-light mb-4">Shape the future with us.</h2>
 
         <div className="p-2"></div>
-        <p className="text-gray-700 leading-relaxed tracking-wider">
+        <p className="text-gray-700 leading-relaxed font-light tracking-wider">
           At Digital Guardians, we believe in the power of people to drive
           meaningful change. We are a team of thinkers, innovators, and
           problem-solvers committed to transforming businesses, industries, and
@@ -72,7 +72,7 @@ const WhyJoin = () => {
                   {feature.title}
                 </p>
                 <div className="p-1" ></div>
-                <p className="text-gray-800 text-sm w-[200px] md:w-[250px] leading-relaxed tracking-wider">{feature.description}</p>
+                <p className="text-gray-800 text-sm w-[200px] md:w-[250px] font-light leading-relaxed tracking-wider">{feature.description}</p>
                 <div className="p-3" ></div>
               </div>
             </div>

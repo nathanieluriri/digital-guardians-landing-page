@@ -60,7 +60,7 @@ const ServiceSection: React.FC = () => {
             {services.map((service, index) => (
               <p
                 key={index}
-                className="px-4 py-2 border rounded-[11px] text-sm border-gray-700 text-[#474747] flex items-center gap-2"
+                className="px-4 py-2 border rounded-[11px] text-sm font-light border-gray-700 text-black flex items-center gap-2"
               >
                 <span className="text-[#FF7474] text-xl  ">●</span> {service}
               </p>

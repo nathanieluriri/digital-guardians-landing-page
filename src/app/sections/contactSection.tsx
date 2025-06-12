@@ -43,7 +43,7 @@ const ContactSection: React.FC = () => {
               </p>
               <a
                 href="mailto:support@digitalguardians.com"
-                className="text-blue-600 hover:underline"
+                className="text-red-600 hover:underline"
               >
                 support@digitalguardians.com
               </a>
@@ -75,7 +75,7 @@ const ContactSection: React.FC = () => {
               </p>
               <a
                 href="tel:+2348000000000"
-                className="text-blue-600 hover:underline"
+                className="text-red-600 hover:underline"
               >
                 +234 800 000 0000
               </a>
@@ -110,7 +110,7 @@ const ContactSection: React.FC = () => {
                   id="name"
                   name="name"
                   placeholder="Your name here"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                 />
               </div>
               <div>
@@ -125,7 +125,7 @@ const ContactSection: React.FC = () => {
                   id="email"
                   name="email"
                   placeholder="Your email here"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                 />
               </div>
               <div>
@@ -140,7 +140,7 @@ const ContactSection: React.FC = () => {
                   id="company"
                   name="company"
                   placeholder="Your Company here"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                 />
               </div>
               <div>
@@ -155,13 +155,13 @@ const ContactSection: React.FC = () => {
                   name="message"
                   rows={4}
                   placeholder="Your Message here"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                 ></textarea>
               </div>
               <div>
                 <button
                   type="submit"
-                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                  className="w-fit m-auto flex justify-center py-2 px-4 border border-gray-700  rounded-md shadow-sm text-sm font-medium text-black hover:bg-black hover:text-white transition-all 1s duration-700 ease-in-out bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                 >
                   Contact us
                 </button>
