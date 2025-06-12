@@ -29,7 +29,7 @@ const features = [
 
 const WhyJoin = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+    <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 relative">
       {/* Left Side: Intro Text */}
       <div className="  m-auto">
         <div className="flex flex-col ">
@@ -52,7 +52,7 @@ const WhyJoin = () => {
       </div>
 
       {/* Right Side: Features */}
-      <div className=" flex flex-col items-center" >
+      <div className=" flex flex-col md:items-center" >
         <h3 className="text-2xl font-light mb-6">
           Why Join Digital Guardians?
         </h3>
@@ -79,6 +79,12 @@ const WhyJoin = () => {
           ))}
         </div>
       </div>
+      <Image
+                    src="/paper-texture-two.svg"
+                    alt="Foreground texture"
+                    fill
+                    className="pointer-events-none z-50 object-center h-full object-cover opacity-25"
+                  />
     </section>
   );
 };
