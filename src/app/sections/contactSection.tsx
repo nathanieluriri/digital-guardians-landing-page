@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ContactSection: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-white p-8">
+    <section className="min-h-screen flex items-center justify-center bg-white p-18">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Left Section */}
         <div className="flex flex-col space-y-8">
@@ -86,7 +86,7 @@ const ContactSection: React.FC = () => {
         {/* Right Section - Contact Form */}
         <div className="relative flex justify-center items-center">
           {/* Placeholder for the lightbulb image */}
-          <div className="absolute -top-16 -right-16 md:-top-24 md:-right-24 z-0">
+          <div className="absolute -top-25 -right-26 md:top-[-150px] md:right-[480px] z-0">
             <Image
               src="/lightbulb.png" // Use /placeholder.png in your public directory
               alt="Lightbulb"
