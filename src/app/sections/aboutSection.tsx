@@ -31,10 +31,11 @@ const AboutSection: React.FC = () => {
         </div>
 
         {/* Right Side: Text Content */}
-        <div className="flex flex-col max-w-xl">
+        <div className="flex flex-col p-3.5 lg:p-0 max-w-xl">
           <h2 className="text-3xl md:text-5xl font-light mb-6">
             Digital Guardian Mission, Vision and Core Values
           </h2>
+          <div className="p-1"></div> 
 
           {/* Vision Statement */}
           <div className="mb-6">
@@ -42,11 +43,13 @@ const AboutSection: React.FC = () => {
               <span className="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span>
               Vision Statement
             </span>
+            <div className="p-1"></div>
             <p className="text-gray-700">
               To be the world&rsquo;s most trusted guardian of digital assets,
               empowering a safer, smarter, and more secure digital future for
               everyone.
             </p>
+            <div className="p-1"></div>
           </div>
 
           {/* Mission Statement */}
@@ -55,11 +58,13 @@ const AboutSection: React.FC = () => {
               <span className="inline-block w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
               Mission Statement
             </span>
+            <div className="p-1"></div>
             <p className="text-gray-700">
               To protect businesses and individuals from evolving cyber threats
               by delivering cutting-edge security solutions, relentless
               innovation, and expert guidance&nbsp;&ndash;&nbsp;24/7, globally.
             </p>
+            <div className="p-1"></div>
           </div>
 
           {/* Core Values */}
@@ -68,23 +73,27 @@ const AboutSection: React.FC = () => {
               <span className="inline-block w-2 h-2 bg-red-500 rounded-full mr-2"></span>
               Core Values
             </span>
-            <ul className="list-disc pl-5 text-gray-700 space-y-2 mt-2">
+            <ul className="list-disc pl-5  text-gray-900 space-y-2 mt-2">
               <li>
                 <strong>Integrity First:</strong> uphold the highest standards
                 of honesty and transparency in all we do.
               </li>
+              <div className="p-1"></div>
               <li>
                 <strong>Relentless Protection:</strong> never rest in our
                 pursuit to safeguard digital environments.
               </li>
+              <div className="p-1"></div>
               <li>
                 <strong>Innovation-Driven:</strong> embrace technology and
                 creativity to stay ahead of threats.
               </li>
+              <div className="p-1"></div>
               <li>
                 <strong>Client-Centric:</strong> solution starts with a deep
                 understanding of our clients’ unique needs.
               </li>
+              <div className="p-1"></div>
               <li>
                 <strong>Global Responsibility:</strong> recognize our role in
                 protecting the digital infrastructure of a connected world.

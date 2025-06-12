@@ -31,13 +31,14 @@ const WhyJoin = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
       {/* Left Side: Intro Text */}
-      <div>
-        <div className="flex items-center space-x-2 border border-gray-300 rounded-[11px] px-4 py-2 w-fit">
+      <div className="  m-auto">
+        <div className="flex flex-col ">
+            <div className="flex items-center space-x-2 border border-gray-300 rounded-[11px] px-4 py-2 w-fit">
           <span className="h-2 w-2 bg-black rounded-full"></span>
           <p className="text-sm font-medium">Careers at Digital Guardians</p>
         </div>
         <div className="p-4"></div>
-        <h2 className="text-4xl font-bold mb-4">Shape the future with us.</h2>
+        <h2 className="text-4xl font-light mb-4">Shape the future with us.</h2>
 
         <div className="p-2"></div>
         <p className="text-gray-700 leading-relaxed">
@@ -47,11 +48,12 @@ const WhyJoin = () => {
           communities. If you&#39;re passionate about making an impact, this is the
           place for you.
         </p>
+        </div>
       </div>
 
       {/* Right Side: Features */}
       <div>
-        <h3 className="text-2xl font-semibold mb-6">
+        <h3 className="text-2xl font-light mb-6">
           Why Join Digital Guardians?
         </h3>
         <div className="space-y-6">
@@ -66,10 +68,12 @@ const WhyJoin = () => {
                 />
               </div>
               <div>
-                <h4 className="text-[#d12323] font-semibold">
+                <p className="text-[#A20000] font-light  ">
                   {feature.title}
-                </h4>
-                <p className="text-gray-700 text-sm">{feature.description}</p>
+                </p>
+                <div className="p-1" ></div>
+                <p className="text-gray-800 text-sm w-[300px]">{feature.description}</p>
+                <div className="p-3" ></div>
               </div>
             </div>
           ))}
