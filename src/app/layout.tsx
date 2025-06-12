@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${roboto.variable}`}>
-      <body>
+      <body className="overflow-x-hidden">
         <Navbar />
         {children}
         <Footer />
