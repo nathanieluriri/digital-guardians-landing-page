@@ -24,10 +24,10 @@ function ResponsiveHeroImage() {
       {/* Image for large screens */}
       <div className="hidden lg:flex text-center self-center bg-center  justify-center">
            <Image
-        src="/paper-texture-one.svg"
+        src="/phone-hero-section-image.png"
         alt="Foreground texture"
-        fill
-        className="pointer-events-none z-50 object-center object-cover opacity-25"
+       width={260}
+       height={200}
       />
       </div>
 
@@ -36,7 +36,7 @@ function ResponsiveHeroImage() {
         <Image
           src="/phone-hero-section-image.png"
           alt="Small screen image"
-          width={600}
+          width={400}
           height={400}
         />
       </div>
@@ -51,7 +51,7 @@ const Hero: React.FC<HeroProps> = ({
   ctaSecondary
 }) => {
   return (
-    <section className="w-full px-6 py-20 bg-white text-center md:text-left">
+    <section className="w-full h-screen px-6 py-20 bg-white text-center md:text-left">
 
       <div className="max-w-6xl mx-auto">
         <h1 className="text-center text-4xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6">
@@ -66,7 +66,7 @@ const Hero: React.FC<HeroProps> = ({
           {ctaPrimary && (
             <Link
               href={ctaPrimary.href}
-              className="px-6 py-3 gap-4 text-white bg-red-600 justify-center flex justify-items-center self-center m-auto  text-center  hover:bg-blue-700 rounded-md text-lg font-medium"
+              className="px-6 py-3 gap-4 text-white bg-red-500  justify-center flex justify-items-center self-center m-auto  text-center  hover:bg-red-900 delay-200  transition-all duration-400 ease-in-out rounded-md text-lg font-medium"
             >
               {ctaPrimary.label} 
               <Image src={'/white-arrow.svg'} height={8.5} width={20.5} alt="Arrow" />
@@ -84,6 +84,12 @@ const Hero: React.FC<HeroProps> = ({
         <div className='p-10'></div>
       </div>
           <ResponsiveHeroImage/>
+           <Image
+        src="/paper-texture-one.svg"
+        alt="Foreground texture"
+        fill
+        className="pointer-events-none z-50 object-center h-full object-cover opacity-20"
+      />
     </section>
   );
 };

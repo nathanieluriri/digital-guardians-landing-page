@@ -65,7 +65,9 @@ const ServiceSection: React.FC = () => {
             className="object-contain"
           />
         </div>
+        
       </div>
+      
     </section>
   );
 };
