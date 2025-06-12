@@ -9,7 +9,7 @@ export function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 p-4 border-b border-[#C6C2C2] bg-[#FBEEEF] max-w-[1800px] m-auto ">
-      <div className="pl-3 pr-1.5 flex items-center justify-between">
+      <div className="lg:pl-3 lg:pr-1.5 flex items-center justify-between">
         <Link
           href="/"
           className="text-xl font-bold underline flex items-center text-[#BE1627]"
