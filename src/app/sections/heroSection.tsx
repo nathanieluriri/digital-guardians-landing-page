@@ -51,7 +51,7 @@ const Hero: React.FC<HeroProps> = ({
   ctaSecondary
 }) => {
   return (
-    <section className="w-full h-screen px-6 py-20 bg-white text-center md:text-left">
+    <section className="w-full  px-6 py-20 bg-white text-center md:text-left">
 
       <div className="max-w-6xl mx-auto">
         <h1 className="text-center text-4xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6">
