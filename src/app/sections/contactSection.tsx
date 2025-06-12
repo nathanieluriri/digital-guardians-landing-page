@@ -5,9 +5,9 @@ import Image from "next/image";
 const ContactSection: React.FC = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-white p-18">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Section */}
-        <div className="flex flex-col space-y-8">
+        <div className="flex flex-col justify-center md:p-35 p-0 space-y-8">
           <div className="flex items-center space-x-2 border border-gray-300 rounded-[11px] px-4 py-2 w-fit">
             <span className="h-2 w-2 bg-black rounded-full"></span>
             <p className="text-sm font-medium">Contact</p>
