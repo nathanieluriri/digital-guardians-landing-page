@@ -94,7 +94,7 @@ const AboutSection: React.FC = () => {
         </div>
       </div>
       <Image
-              src="/paper-texture-two.svg"
+              src="/paper-texture-one.svg"
               alt="Foreground texture"
               fill
               className="pointer-events-none z-50 object-center h-full object-cover opacity-20"
