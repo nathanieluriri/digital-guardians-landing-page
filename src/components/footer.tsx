@@ -1,91 +1,59 @@
-import Image from "next/image";
-import Link from "next/link";
+'use client'
 
-const Footer = () => {
+import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
+
+export default function Footer() {
+  const [email, setEmail] = useState('')
+
   return (
-    <footer className="bg-white text-sm text-black px-6 py-10 mt-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-        {/* Left: Logo + Newsletter */}
+    <footer className="bg-white text-black border-t border-gray-200 mt-10 flex flex-col w-full m-auto  justify-center items-center ">
+      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Newsletter Section */}
         <div>
-          <div className="flex items-center space-x-2 mb-4">
-            <Image
-              src="/globe.png"
-              alt="Digital Guardian Logo"
-              width={24}
-              height={24}
-            />
-            <span className="text-[#d12323] font-semibold">
-              Digital Guardian
-            </span>
+          <div className="flex items-center space-x-2">
+            <Image src="/globe.svg" alt="Digital Guardian" width={44} height={44} />
+            <span className="text-sm font-semibold text-red-600">Digital Guardian</span>
           </div>
-          <p className="mb-2 text-gray-700">
-            Subscribe to our newsletter for the latest updates on features and
-            releases.
-          </p>
-          <form className="flex flex-col sm:flex-row gap-2">
+          <p className="text-sm mt-4">Subscribe to our newsletter for the latest updates on features and releases.</p>
+          <div className="flex mt-4">
             <input
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email here"
-              className="p-2 border border-gray-300 rounded w-full sm:w-auto"
+              className="border border-gray-300 rounded-l px-4 py-2 w-full"
             />
-            <button
-              type="submit"
-              className="px-4 py-2 border border-gray-300 rounded"
-            >
-              Join
-            </button>
-          </form>
-          <p className="text-xs text-gray-500 mt-2">
-            By subscribing, you agree to our{" "}
-            <Link href="/privacy-policy" className="underline">
-              Privacy Policy
-            </Link>{" "}
-            and consent to receive updates.
+            <button className="bg-black text-white px-4 py-2 rounded-r hover:bg-gray-800">Join</button>
+          </div>
+          <p className="text-xs text-gray-500 mt-2 w-fit">
+            By subscribing, you agree to our <Link href="/privacy-policy" className="underline">Privacy Policy</Link> and consent to receive updates.
           </p>
         </div>
 
-        {/* Middle: Quick Links */}
-        <div>
+        {/* Quick Links */}
+        <div className='lg:w-fit lg:m-auto'>
           <h4 className="font-semibold mb-4">Quick Links</h4>
-          <ul className="space-y-2 text-gray-700">
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>
-              <Link href="/service">Service</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
-            <li>
-              <Link href="/product">Product</Link>
-            </li>
-            <li>
-              <Link href="/faqs">FAQs</Link>
-            </li>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/service">Service</Link></li>
+            <li><Link href="/contact">Contact</Link></li>
+            <li><Link href="/product">Product</Link></li>
+            <li><Link href="/faqs">FAQs</Link></li>
           </ul>
         </div>
 
-        {/* Right: Contact Us */}
-        <div>
+        {/* Social Links */}
+        <div className='lg:w-fit lg:m-auto'>
           <h4 className="font-semibold mb-4">Contact us</h4>
-          <ul className="space-y-2 text-gray-700">
+          <ul className="space-y-2 text-sm">
             <li className="flex items-center space-x-2">
-              <Image
-                src="/facebook.svg"
-                alt="Facebook"
-                width={16}
-                height={16}
-              />
+              <Image src="/facebook.svg" alt="Facebook" width={16} height={16} />
               <span>Facebook</span>
             </li>
             <li className="flex items-center space-x-2">
-              <Image
-                src="/instagram.svg"
-                alt="Instagram"
-                width={16}
-                height={16}
-              />
+              <Image src="/instagram.svg" alt="Instagram" width={16} height={16} />
               <span>Instagram</span>
             </li>
             <li className="flex items-center space-x-2">
@@ -93,12 +61,7 @@ const Footer = () => {
               <span>Twitter</span>
             </li>
             <li className="flex items-center space-x-2">
-              <Image
-                src="/linkedIn.svg"
-                alt="LinkedIn"
-                width={16}
-                height={16}
-              />
+              <Image src="/linkedin.svg" alt="LinkedIn" width={16} height={16} />
               <span>LinkedIn</span>
             </li>
             <li className="flex items-center space-x-2">
@@ -109,17 +72,16 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="mt-10 border-t border-gray-200 pt-4 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-600">
-        <p>© 2025 Digital Guardians. All rights reserved.</p>
-        <div className="flex space-x-4 mt-2 sm:mt-0">
-          <Link href="/privacy-policy">Privacy Policy</Link>
-          <Link href="/terms-of-use">Terms of Use</Link>
-          <Link href="/cookie-policy">Cookie Policy</Link>
+      {/* Bottom bar */}
+      <div className="sm:bg-red-50 text-[14px] py-4 w-fit m-auto px-[40px] lg:px-[300px] rounded-[11px] lg:gap-[100px] flex flex-col md:flex-row justify-between items-center ">
+        <p className='font-medium text-black leading-relaxed tracking-wider' >© 2025 Digital Guardians. All rights reserved.</p>
+        <div className="flex space-x-4 mt-2 md:mt-0">
+          <Link href="/privacy-policy" className="text-red-500 hover:underline">Privacy Policy</Link>
+          <Link href="/terms" className="text-red-500 hover:underline">Terms of Use</Link>
+          <Link href="/cookies" className="text-red-500 hover:underline">Cookie Policy</Link>
         </div>
       </div>
+      <div className='p-10' ></div>
     </footer>
-  );
-};
-
-export default Footer;
+  )
+}
