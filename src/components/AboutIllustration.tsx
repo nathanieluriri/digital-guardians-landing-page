@@ -34,18 +34,7 @@ const AboutIllustration = () => {
   };
 
   // Variants for individual orbiting icons
-  const itemVariants = {
-    initial: { scale: 0, opacity: 0 },
-    animate: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 260,
-        damping: 20,
-      },
-    },
-  };
+
 
   return (
     <motion.div

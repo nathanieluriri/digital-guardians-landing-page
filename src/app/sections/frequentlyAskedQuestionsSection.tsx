@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import Image from "next/image";
+
 
 type FAQCategory = "General" | "Getting Started" | "Billing" | "The Product";
 
