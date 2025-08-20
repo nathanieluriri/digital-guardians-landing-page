@@ -2,10 +2,10 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+// import { useState } from 'react'
 
 export default function Footer() {
-  const [email, setEmail] = useState('')
+  // const [email, setEmail] = useState('')
 
   return (
     <footer className="bg-gray-900 text-gray-300 mt-10 w-full">
