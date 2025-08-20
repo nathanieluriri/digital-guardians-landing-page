@@ -20,27 +20,9 @@ interface HeroProps {
 
 function ResponsiveHeroImage() {
   return (
-    <div>
-      {/* Image for large screens */}
-      <div className="hidden lg:flex text-center self-center bg-center  justify-center">
-           <Image
-        src="/phone-hero-section-image.png"
-        alt="Foreground texture"
-       width={260}
-       height={200}
-      />
-      </div>
-
-      {/* Image for small screens */}
-      <div className="flex text-center self-center bg-center  justify-center lg:hidden">
-        <Image
-          src="/phone-hero-section-image.png"
-          alt="Small screen image"
-          width={400}
-          height={400}
-        />
-      </div>
-    </div>
+    <video autoPlay loop  playsInline muted className="w-74 m-auto h-auto">
+  <source src="/Digital_Guardians_Transparent.webm" type="video/webm" />
+</video>
   );
 }
 
@@ -51,7 +33,7 @@ const Hero: React.FC<HeroProps> = ({
   ctaSecondary
 }) => {
   return (
-    <section className="w-full  px-6 pt-20 pb-0 bg-white text-center md:text-left">
+    <section className="w-full h-screen px-6 pt-20 pb-0 bg-[#eef6fb] text-center md:text-left">
 
       <div className="max-w-6xl mx-auto">
         <h1 className="text-center text-4xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6">
@@ -66,7 +48,7 @@ const Hero: React.FC<HeroProps> = ({
           {ctaPrimary && (
             <Link
               href={ctaPrimary.href}
-              className="px-6 py-3 gap-4 text-white bg-red-500  justify-center flex justify-items-center self-center m-auto  text-center  hover:bg-red-900 delay-200  transition-all duration-400 ease-in-out rounded-md text-lg font-medium"
+              className="px-6 py-3 gap-4 text-white bg-[#2084C7]  justify-center flex justify-items-center self-center m-auto  text-center  hover:bg-red-900 delay-200  transition-all duration-400 ease-in-out rounded-md text-lg font-medium"
             >
               {ctaPrimary.label} 
               <Image src={'/white-arrow.svg'} height={8.5} width={20.5} alt="Arrow" />

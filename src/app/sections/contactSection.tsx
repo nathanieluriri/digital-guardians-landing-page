@@ -1,10 +1,11 @@
 // components/ContactSection.tsx
+
 import React from "react";
 import Image from "next/image";
 
 const ContactSection: React.FC = () => {
   return (
-    <section className="min-h-screen flex md:items-center md:justify-center bg-white p-8 md:p-18">
+    <section className="h-screen max-h-[1500px] flex md:items-center md:justify-center bg-white p-8 md:p-18">
       <div className="flex flex-col md:container md:mx-auto md:grid  md:grid-cols-2 gap-32 md:items-center">
         {/* Left Section */}
         <div className="flex flex-col md:justify-center md:p-35 p-0 space-y-8">
@@ -17,7 +18,7 @@ const ContactSection: React.FC = () => {
           <p className="text-gray-600">
             We&#39;re here to assist you with any inquiries.
           </p>
-
+              
           <div className="flex items-start space-x-4">
             <div className="flex-shrink-0">
               {/* Mail icon - using a simple SVG or font icon would be better for production */}

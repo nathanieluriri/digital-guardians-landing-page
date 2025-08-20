@@ -167,16 +167,7 @@ const FaqSection: React.FC = () => {
         </div>
 
         {/* Right: Illustration */}
-        <div className="flex-1 hidden md:flex text-center items-center m-auto justify-center">
-            <Image
-                        src="/faq.png" // Replace with actual image// Replace with actual image
-                        alt="Digital Guardians Logo"
-                        width={300}
-                        height={300}
-                        className="object-contain"
-                      />
-         
-        </div>
+        
       </div>
 
       {/* Contact CTA */}
