@@ -46,7 +46,7 @@ const ContactSection: React.FC = () => {
                 href="mailto:support@digitalguardians.com"
                 className="text-blue-600 hover:underline"
               >
-                support@digitalguardians.com
+                digitalguardians@gmail.com
               </a>
             </div>
           </div>
@@ -75,10 +75,10 @@ const ContactSection: React.FC = () => {
                 Call us for quick support or inquiries.
               </p>
               <a
-                href="tel:+2348000000000"
+                href="tel:+2348012345678 "
                 className="text-blue-600 hover:underline"
               >
-                +234 800 000 0000
+                +234 801 234 5678 
               </a>
             </div>
           </div>
