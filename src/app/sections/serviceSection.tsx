@@ -5,21 +5,38 @@ import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
 const services = [
+  // Cybersecurity
   "Threat Detection & Prevention",
-  "Digital Risk Rating",
-  "Brand Protection",
-  "Cloud Security",
-  "Security Awareness Training",
-  "Network Security Architecture",
-  "Security Audits & Compliance",
   "Incident Response & Recovery",
   "Penetration Testing & Vulnerability Assessment",
-  "Identity and Access Management",
+  "Security Audits & Compliance",
+  "Identity & Access Management",
   "Data Loss Prevention",
-  "Security Software Development",
-  "Risk Assessment & Management",
-];
+  "Cloud Security & Zero Trust Architecture",
+  "Security Awareness Training",
 
+  // Information Technology
+  "IT Infrastructure Design & Management",
+  "Cloud Migration & Optimization",
+  "Enterprise Software Development",
+  "Network Security Architecture",
+  "Risk Assessment & Management",
+  "24/7 Monitoring & Support",
+
+  // Media & Digital Presence
+  "Brand Protection & Reputation Management",
+  "Content Security & Digital Rights Management",
+  "Secure Media Hosting & Streaming Solutions",
+  "Creative Media Production & Design",
+  "Digital Marketing & SEO Services",
+
+  // Digital Transformation
+  "Process Automation & AI Integration",
+  "Data Analytics & Business Intelligence",
+  "Blockchain & Emerging Tech Solutions",
+  "User Experience & Digital Platforms",
+  "Strategic IT Consulting & Roadmapping",
+];
 // Container for stagger animation
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -126,12 +143,7 @@ const ServiceSection: React.FC = () => {
             viewport={{ once: false }}
             className="text-lg text-gray-900 mb-8 font-light leading-relaxed tracking-wider"
           >
-            From insider threats to advanced external attacks, Digital Guardian
-            delivers enterprise-grade cybersecurity solutions that safeguard
-            your sensitive data across endpoints, networks, and the cloud. With
-            real-time threat detection, data loss prevention, and compliance
-            support, we empower your business to operate securely in an
-            increasingly complex digital world.
+            From insider threats to advanced external attacks, Digital Guardian delivers enterprise-grade cybersecurity to protect your sensitive data across endpoints, networks, and the cloud. Beyond security, our IT experts design and optimize infrastructure, migrate and manage cloud environments, and provide 24/7 monitoring to keep you resilient. We also secure and elevate your digital presence through brand protection, media innovation, and content security. And with AI-driven automation, analytics, and emerging tech, our digital transformation solutions empower your business to grow securely and thrive in an increasingly connected world.
           </motion.p>
 
           <motion.div

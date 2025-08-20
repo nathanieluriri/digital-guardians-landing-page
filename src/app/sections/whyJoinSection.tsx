@@ -65,7 +65,7 @@ const iconVariants:Variants = {
 
 const WhyJoin = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 relative">
+    <section className="max-w-[1500px] mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 relative">
       {/* Left Side: Intro Text */}
       <div className="m-auto">
         <div className="flex flex-col ">
