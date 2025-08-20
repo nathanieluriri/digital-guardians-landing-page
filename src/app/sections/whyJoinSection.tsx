@@ -36,7 +36,7 @@ const containerVariants:Variants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.25,
+      staggerChildren: 0.55,
     },
   },
 };
@@ -92,7 +92,7 @@ const WhyJoin = () => {
           <motion.p
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.3 }}
+            transition={{ duration: 1, delay: 0.4 }}
             className="text-gray-700 leading-relaxed font-light tracking-wider"
           >
             At Digital Guardians, we believe in the power of people to drive
@@ -110,10 +110,10 @@ const WhyJoin = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.4 }}
       >
         <motion.h3
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-2xl font-light mb-6"

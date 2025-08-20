@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const ContactSection: React.FC = () => {
   return (
-    <section className="h-screen max-h-[1500px] flex md:items-center md:justify-center bg-white p-8 md:p-18">
+    <section className=" md:h-screen md:max-h-[1500px] flex md:items-center md:justify-center bg-white p-8 md:p-18">
       <div className="flex flex-col md:container md:mx-auto md:grid  md:grid-cols-2 gap-32 md:items-center">
         {/* Left Section */}
         <div className="flex flex-col md:justify-center md:p-35 p-0 space-y-8">
@@ -44,7 +44,7 @@ const ContactSection: React.FC = () => {
               </p>
               <a
                 href="mailto:support@digitalguardians.com"
-                className="text-red-600 hover:underline"
+                className="text-blue-600 hover:underline"
               >
                 support@digitalguardians.com
               </a>
@@ -76,7 +76,7 @@ const ContactSection: React.FC = () => {
               </p>
               <a
                 href="tel:+2348000000000"
-                className="text-red-600 hover:underline"
+                className="text-blue-600 hover:underline"
               >
                 +234 800 000 0000
               </a>

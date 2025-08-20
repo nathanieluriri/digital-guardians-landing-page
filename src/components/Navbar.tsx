@@ -43,12 +43,16 @@ export function Navbar() {
           
           {/* Logo */}
           <Link href="/" className="flex-shrink-0" onClick={() => setIsOpen(false)}>
+           <video autoPlay loop  playsInline muted  className="w-35 block sm:hidden m-auto h-auto">
+  <source src="/Digital_Guardians_Transparent.webm" type="video/webm" />
+</video>
             <Image
               src="/digital-guardians-logo-with-wordmark.png"
               alt="Digital Guardians Logo"
               width={120}
               height={38}
               priority
+              className="hidden sm:block"
             />
           </Link>
 

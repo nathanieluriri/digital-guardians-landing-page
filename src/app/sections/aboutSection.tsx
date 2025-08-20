@@ -43,14 +43,14 @@ const AboutSection: React.FC = () => {
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="flex flex-row lg:flex-col justify-between lg:items-end items-center lg:w-fit w-full lg:p-0 p-0.5"
+          viewport={{ once: false }}
+          className="flex flex-col lg:flex-col justify-between lg:items-end items-center lg:w-fit w-full lg:p-0 p-0.5"
         >
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="flex items-center space-x-2 border border-gray-300 rounded-[11px] px-4 py-2 w-fit h-fit"
           >
             <span className="h-2 w-2 bg-black rounded-full"></span>
@@ -60,7 +60,7 @@ const AboutSection: React.FC = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="w-fit"
           >
             <AboutIllustration />
@@ -73,7 +73,7 @@ const AboutSection: React.FC = () => {
           initial="hidden"
           whileInView="visible"
           variants={containerVariants}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.4 }}
         >
           {/* Heading */}
           <motion.h2

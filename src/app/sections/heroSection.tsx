@@ -20,7 +20,7 @@ interface HeroProps {
 
 function ResponsiveHeroImage() {
   return (
-    <video autoPlay loop  playsInline muted className="w-74 m-auto h-auto">
+    <video autoPlay loop  playsInline muted className="w-74 hidden sm:block m-auto h-auto">
   <source src="/Digital_Guardians_Transparent.webm" type="video/webm" />
 </video>
   );
@@ -33,7 +33,7 @@ const Hero: React.FC<HeroProps> = ({
   ctaSecondary
 }) => {
   return (
-    <section className="w-full h-screen px-6 pt-20 pb-0 bg-[#eef6fb] text-center md:text-left">
+    <section className="w-full h-screen max-h-[1000px] md:max-h-[1500px] px-6 pt-20 pb-0 bg-[#eef6fb] text-center md:text-left">
 
       <div className="max-w-6xl mx-auto">
         <h1 className="text-center text-4xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6">

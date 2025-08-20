@@ -58,7 +58,7 @@ const ServiceSection: React.FC = () => {
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="flex gap-5 sm:gap-20 lg:flex-col flex-row"
         >
           <div className="flex gap-5 flex-col">
@@ -66,7 +66,7 @@ const ServiceSection: React.FC = () => {
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className="flex items-center space-x-2 border border-gray-300 rounded-[11px] px-4 py-2 w-fit"
             >
               <span className="h-2 w-2 bg-black rounded-full"></span>
@@ -76,7 +76,7 @@ const ServiceSection: React.FC = () => {
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className="text-lg font-light"
             >
               What Digital Guardian Offers?
@@ -95,7 +95,7 @@ const ServiceSection: React.FC = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
             />
           </div>
         </motion.div>
@@ -105,14 +105,14 @@ const ServiceSection: React.FC = () => {
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="flex-1"
         >
           <motion.h2
             initial={{ opacity: 0, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="text-3xl md:text-5xl font-light mb-6"
           >
             Protect What Matters Most — Digital Guardian Secures Your Data,
@@ -123,7 +123,7 @@ const ServiceSection: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.2 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="text-lg text-gray-900 mb-8 font-light leading-relaxed tracking-wider"
           >
             From insider threats to advanced external attacks, Digital Guardian
@@ -139,7 +139,7 @@ const ServiceSection: React.FC = () => {
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: false, amount: 0.4 }}
           >
             {services.map((service, index) => (
               <motion.p
